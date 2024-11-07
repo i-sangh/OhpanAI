@@ -1,0 +1,133 @@
+.app-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.app-title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.chat-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.custom-textarea {
+  min-height: 60px;
+}
+
+.main-textarea {
+  min-height: 120px;
+}
+
+.submit-btn {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.submit-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.response-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.response-title {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.response-content {
+  line-height: 1.6;
+}
+
+.response-header {
+  color: #2c3e50;
+  font-size: 1.2em;
+  margin: 1.5em 0 0.8em 0;
+  font-weight: bold;
+}
+
+.response-paragraph {
+  margin: 1em 0;
+  color: #2c3e50;
+  text-align: justify;
+}
+
+.response-paragraph strong {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.list-item + .list-item {
+  margin-top: 1em;
+}
+
+.instruction-text {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 5px;
+}
+.tone-buttons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.tone-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 2px solid #007bff; /* Blue border for unselected buttons */
+  border-radius: 5px;
+  background-color: white;
+  color: #007bff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tone-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.tone-button.selected {
+  background-color: #007bff;
+  color: white;
+  border-color: #0056b3; /* Darker blue border for selected buttons */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  transform: scale(1.05); /* Slightly enlarges when selected */
+}
